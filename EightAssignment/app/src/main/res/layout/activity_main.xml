@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shaloin.eightassignmentb.MainActivity">
+
+   <TextView
+       android:id="@+id/title"
+       android:textSize="22sp"
+       android:text="Information"
+       android:layout_centerHorizontal="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_below="@+id/title"
+        android:ems="15"
+        android:textColor="#000000"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ageID"
+        android:layout_below="@+id/nameID"
+        android:ems="15"
+        android:textColor="#000000"
+        android:hint="Age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/phoneID"
+        android:layout_below="@+id/ageID"
+        android:ems="15"
+        android:textColor="#000000"
+        android:hint="Enter Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/cityID"
+        android:layout_below="@+id/phoneID"
+        android:ems="15"
+        android:textColor="#000000"
+        android:hint="Enter City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/saveID"
+        android:text="Save"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cityID"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:background="#ff00c3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSave"/>
+    <Button
+        android:id="@+id/showID"
+        android:text="Show"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/saveID"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:background="#ff00c3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onShow"/>
+</RelativeLayout>
